@@ -3,9 +3,11 @@ nmap -A -sS -sC -p- [xss-ctf ip]
 
 http://[xss-ctf ip] 접속	//apache2 기본 페이지
 
-```
+
 gobuster dir -u http://[xss-ctf ip] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,txt,php,bak
-```
 /index.php  /index.html  /list.php  /add.php
 
 http://[xss-ctf ip]/index.php
+
+
+
