@@ -12,8 +12,10 @@ gobuster dir -u http://[xss-ctf ip] -w /usr/share/wordlists/dirbuster/directory-
 
 /index.php
 !!!!!!!
+
 view source code
 !!!!!!!
+
 /H10000.txt
 !!!!!!!!
 H10000 값
