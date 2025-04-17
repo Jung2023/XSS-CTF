@@ -70,7 +70,7 @@ SQL Injection 공격 가능 – userID DB 확인 가능
 
 ## XOR 연산
 
-XOR 변환기
+XOR 변환기 http://kor.pe.kr/util/4/xor_convert.htm
 
 /list.php 에서 얻은 M1,M2,M3,M4 값과 /H10000 에서 얻은 H10000 값으로 XOR 연산
 
