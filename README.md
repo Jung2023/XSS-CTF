@@ -19,11 +19,11 @@ kali firefox에서 http://192.168.56.143 접속	//apache2 기본 페이지
 ```
 gobuster dir -u http://192.168.56.143 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,txt,php,bak
 ```
+![Image](https://github.com/user-attachments/assets/9e901dce-29de-4b1e-b9ac-374a0d2eecc1)
+
 /index.php  /index.html  /list.php  /add.php
 
 ## /index.php
-
-![Image](https://github.com/user-attachments/assets/9e901dce-29de-4b1e-b9ac-374a0d2eecc1)
 
 들어가보았지만 Not Found가 뜬다. 그래서 web source페이지를 보았다.
 
