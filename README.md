@@ -19,7 +19,7 @@ kali firefox에서 http://192.168.56.143 접속	//apache2 기본 페이지
 ```
 gobuster dir -u http://192.168.56.143 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,txt,php,bak
 ```
-![Image](https://github.com/user-attachments/assets/9e901dce-29de-4b1e-b9ac-374a0d2eecc1)
+![Image](https://github.com/user-attachments/assets/bd1a298b-82bf-4f81-88a9-02edc6157fcf)
 
 /index.php  /index.html  /list.php  /add.php
 
