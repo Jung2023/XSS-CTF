@@ -105,7 +105,7 @@ $M_{4}=H_{9999} ⨁ P$
 
 $P=H_{10000}⨁M_{3}$를 통해 $Password$=df93ef64167b2334664ff59a5b8185f5값을 구하면 $M_{4}$를 통해 $H_{9999}$를 구할 수 있다. $H_{9999}=M_{4}⨁P$ 이후 $M_{1}$을 이용하여 $K$를 구할 수 있다. 이때 $userID$는 위의 SQL Injection으로 찾아낸 $userID$ 중 하나씩 다 대입하면 $userID$=Ocean777Timewarp를 넣어서 계산하다보면 그럴듯한 $K$=secretpassword12값이 나온다. 그 다음 $M_{2}$에서 $serverID=M_{2}⨁H_{9999}$를 구할 수 있다. $serverID$=cr0sss1tescr1pt9 이제 서버의 ID와 Password를 전부 찾았다.
 
-2방법: 
+2번 방법: 
 
 $M_{1}=userID ⨁ K ⨁ H_{9999}$
 
@@ -132,6 +132,7 @@ df93ef64167b2334664ff59a5b8185f5
 
 
 ## User Flag
+user flag 획득
 
 ![Image](https://github.com/user-attachments/assets/67b27143-5b03-4bef-ae07-28b84f7f9b08)
 
@@ -160,7 +161,7 @@ https://github.com/blasty/CVE-2021-3156  참조
 
 
 https://github.com/blasty/CVE-2021-3156 - Makefile 참고
-- root flag
+root flag
 
 ![Image](https://github.com/user-attachments/assets/10a28bff-12d4-4aed-808a-d153e2604233)
 
