@@ -161,6 +161,7 @@ https://github.com/blasty/CVE-2021-3156  참조
 
 
 https://github.com/blasty/CVE-2021-3156 - Makefile 참고
+
 root flag
 
 ![Image](https://github.com/user-attachments/assets/10a28bff-12d4-4aed-808a-d153e2604233)
