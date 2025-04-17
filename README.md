@@ -39,18 +39,23 @@ H10000 값
 index.php에서 Not Found가 떠서 list.php를 들어가면 다음과 같은 글이 작성되어있다
 
 ![Image](https://github.com/user-attachments/assets/432de6fe-9e2c-43fd-85b5-cea0166608b3)
+
 M1,M2,M3,M4 값이 중요하기 때문에 복붙
 
 1번 게시글 삭제 후 /index.php 를 다시 들어가면 정상적인 페이지가 뜬다는 것을 확인할 수 있다
+
 ![Image](https://github.com/user-attachments/assets/3662b62c-6cd9-4126-a512-355c599517ab)
 
 ![Image](https://github.com/user-attachments/assets/e761c310-7b48-4307-bef6-122f69671eff)
+
+![Image](https://github.com/user-attachments/assets/47239fa6-b91f-4f44-a8a0-5117113147f2)
 
 ## /add.php
 
 http://192.168.56.143/add.php에서 View Source Code를 들어가서 보면 쿼리 작성폼이라는 주석이있는 줄에 쿼리 작성 폼과 ID 조회하는 코드에 type=”hidden”이 되어 있는 것을 알 수 있다.
 
-![Image](https://github.com/user-attachments/assets/47239fa6-b91f-4f44-a8a0-5117113147f2)
+![Image](https://github.com/user-attachments/assets/f803dce9-6c07-4622-af87-3e6f724ddc71)
+
 
 개발자 도구 -F12
 <!- -MySQL 쿼리 입력 폼 -- > 주석 확인
@@ -64,11 +69,12 @@ type=”hidden” -> type=”submit” 변경
 
 
 Mysql 쿼리 입력 부분 출력됨
-![Image](https://github.com/user-attachments/assets/f803dce9-6c07-4622-af87-3e6f724ddc71)
+![Image](https://github.com/user-attachments/assets/1b296738-33a9-4060-8999-516679205e25)
 
 SQL Injection 공격 가능 – userID DB 확인 가능
-![Image](https://github.com/user-attachments/assets/1b296738-33a9-4060-8999-516679205e25)
+
 ![Image](https://github.com/user-attachments/assets/db3dbe72-6868-4199-bba0-162e2cc87ff9)
+
 
 ## XOR 연산
 
