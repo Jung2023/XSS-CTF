@@ -54,26 +54,29 @@ M1,M2,M3,M4 값이 중요하기 때문에 복붙
 
 http://192.168.56.143/add.php에서 View Source Code를 들어가서 보면 쿼리 작성폼이라는 주석이있는 줄에 쿼리 작성 폼과 ID 조회하는 코드에 type=”hidden”이 되어 있는 것을 알 수 있다.
 
-!!!!!!!!!!!!!!!!!!!!!
-
+![Image](https://github.com/user-attachments/assets/0a49c75c-76f1-428e-806e-f37223e4c611)
 
 개발자 도구 -F12
 <!- -MySQL 쿼리 입력 폼 -- > 주석 확인
 type=”hidden” 2개 확인 가능
 
-!!!!!!!!!!!!!!!!!!!!!!!!!
+![Image](https://github.com/user-attachments/assets/e5ea83a6-c3fd-469f-bcb7-70803c2e2c4a)
 
 type=”hidden” 삭제
 
 type=”hidden” -> type=”submit” 변경
 
+![Image](https://github.com/user-attachments/assets/5ef4b06f-da65-4cf9-b137-ae34d2fe3ee5)
+
+![Image](https://github.com/user-attachments/assets/892fc8e3-3334-4420-b366-18da9c542498)
 
 Mysql 쿼리 입력 부분 출력됨
-!!!!!!!!!!!!!!!!!!
+
+![Image](https://github.com/user-attachments/assets/d5de20bf-3eb1-43bb-9e74-860b97a817c5)
 
 SQL Injection 공격 가능 – userID DB 확인 가능
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+![Image](https://github.com/user-attachments/assets/b771484d-4fb4-4428-99e6-3ff44d8853ad)
 
 
 ## XOR 연산
