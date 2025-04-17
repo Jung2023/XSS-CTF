@@ -42,11 +42,13 @@ index.php에서 Not Found가 떠서 list.php를 들어가면 다음과 같은 �
 
 ![Image](https://github.com/user-attachments/assets/432de6fe-9e2c-43fd-85b5-cea0166608b3)
 
-M1,M2,M3,M4 값이 중요하기 때문에 복붙
+
 
 1번 게시글 삭제 후 /index.php 를 다시 들어가면 정상적인 페이지가 뜬다는 것을 확인할 수 있다
 
 ![Image](https://github.com/user-attachments/assets/3662b62c-6cd9-4126-a512-355c599517ab)
+
+M1,M2,M3,M4 값이 중요하기 때문에 복붙
 
 ![Image](https://github.com/user-attachments/assets/e761c310-7b48-4307-bef6-122f69671eff)
 
