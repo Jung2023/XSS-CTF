@@ -95,13 +95,13 @@ XOR 변환기 http://kor.pe.kr/util/4/xor_convert.htm
 
 192.168.56.143/index.php에서 다음과 같은 식을 제공하였다. 이때 P=Password다. 
 
-M1=userID ⨁ K ⨁ H9999
+$M1=userID ⨁ K ⨁ H9999$
 
-M2=serverID ⨁ K ⨁ H9999 
+$M2=serverID ⨁ K ⨁ H9999$
 
-M3=H10000 ⨁ P
+$M3=H10000 ⨁ P$
 
-M4=H9999 ⨁ 
+$M4=H9999 ⨁ P$
 
 P=H10000⨁M3를 통해 Password=df93ef64167b2334664ff59a5b8185f5값을 구하면 M4를 통해 H9999를 구할 수 있다. H9999=M4⨁P 이후 M1을 이용하여 K를 구할 수 있다. 이때 UserID는 위의 SQL Injection으로 찾아낸 UserID 중 하나씩 다 대입하면 UserID=Ocean777Timewarp를 넣어서 계산하다보면 그럴듯한 K=secretpassword12값이 나온다. 그 다음 M2에서 serverID=M2⨁H9999를 구할 수 있다. serverID=cr0sss1tescr1pt9 이제 서버의 ID와 Password를 전부 찾았다.
 
@@ -109,11 +109,11 @@ P=H10000⨁M3를 통해 Password=df93ef64167b2334664ff59a5b8185f5값을 구하�
 
 $M1=userID ⨁ K ⨁ H9999$
 
-M2=serverID ⨁ K ⨁ H9999 
+$M2=serverID ⨁ K ⨁ H9999$
 
-M3=H10000 ⨁ P
+$M3=H10000 ⨁ P$
 
-M4=H9999 ⨁ P
+$M4=H9999 ⨁ P$
 
 P=H10000⨁M3를 통해 Password=df93ef64167b2334664ff59a5b8185f5를 구한 후 M1⨁M2=userID⨁serverID가 나오고 SQL Injection으로 찾아낸 userID를 하나씩 대입하면 serverID= cr0sss1tescr1pt9가 나온다. 이렇게 하면 굳이 H9999값과 K값을 구하지 않아도 ServerID값을 구할 수 있다.
 
