@@ -7,3 +7,5 @@ gobuster dir -u http://[xss-ctf ip] -w /usr/share/wordlists/dirbuster/directory-
 /index.html
 /list.php
 /add.php
+
+/index.php
