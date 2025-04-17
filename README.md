@@ -35,16 +35,14 @@ gobuster dir -u http://192.168.56.143 -w /usr/share/wordlists/dirbuster/director
 
 H10000 값
 
-
-## /list.php
-
-index.php에서 Not Found가 떠서 list.php를 들어가면 다음과 같은 글이 작성되어있다
-
 ![Image](https://github.com/user-attachments/assets/432de6fe-9e2c-43fd-85b5-cea0166608b3)
 
 
+## /list.php
 
-1번 게시글 삭제 후 /index.php 를 다시 들어가면 정상적인 페이지가 뜬다는 것을 확인할 수 있다
+index.php에서 Not Found가 떠서 list.php를 들어가면 다음과 같은 글이 작성되어있다.
+
+1번 게시글 삭제 후 /index.php 를 다시 들어가면 정상적인 페이지가 뜬다는 것을 확인할 수 있다.
 
 ![Image](https://github.com/user-attachments/assets/3662b62c-6cd9-4126-a512-355c599517ab)
 
@@ -108,7 +106,7 @@ P=H10000⨁M3를 통해 Password=df93ef64167b2334664ff59a5b8185f5값을 구하�
 
 2방법: 
 
-M1=userID ⨁ K ⨁ H9999
+$$M1=userID ⨁ K ⨁ H9999$$
 
 M2=serverID ⨁ K ⨁ H9999 
 
