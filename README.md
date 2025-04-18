@@ -36,7 +36,7 @@ gobuster dir -u http://192.168.56.143 -w /usr/share/wordlists/dirbuster/director
 
 ![Image](https://github.com/user-attachments/assets/432de6fe-9e2c-43fd-85b5-cea0166608b3)
 
-H10000 값
+$H_{10000}$ 값
 
 
 ## /list.php
