@@ -56,7 +56,7 @@ index.php에서 Not Found가 떠서 list.php를 들어가면 다음과 같은 �
 
 ## /add.php
 
-http://192.168.56.143/add.php에서 View Source Code를 들어가서 보면 쿼리 작성폼이라는 주석이 있는 줄에 쿼리 작성 폼과 ID 조회하는 코드에 type=”hidden”이 되어 있는 것을 알 수 있다.
+http://192.168.56.143/add.php 에서 View Source Code를 들어가서 보면 쿼리 작성폼이라는 주석이 있는 줄에 쿼리 작성 폼과 ID 조회하는 코드에 type=”hidden”이 되어 있는 것을 알 수 있다.
 
 ![Image](https://github.com/user-attachments/assets/0a49c75c-76f1-428e-806e-f37223e4c611)
 
